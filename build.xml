@@ -1,4 +1,4 @@
-<project name="Ant jobs" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="Ant jobs" default="deployWithTestClasses" basedir="." xmlns:sf="antlib:com.salesforce">
 
     <property file="build.properties"/>
     <property environment="env"/>
