@@ -1,0 +1,116 @@
+[
+    [
+        "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app",
+        {
+            "sourcePath": "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1562071507686,
+            "changeTime": 1562071507686,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isMetadataFile": false,
+            "state": "n",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main",
+        {
+            "sourcePath": "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1562071507686,
+            "changeTime": 1562071507686,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isMetadataFile": false,
+            "state": "n",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1562075827463,
+            "changeTime": 1562075827463,
+            "contentHash": "8100b331d5798b52156dc4652bd8f9af5e029000"
+        }
+    ],
+    [
+        "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default\\aura",
+        {
+            "sourcePath": "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default\\aura",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1562071507686,
+            "changeTime": 1562071507686,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "n",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default\\lwc",
+        {
+            "sourcePath": "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default\\lwc",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1562071507686,
+            "changeTime": 1562071507686,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "n",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo",
+        {
+            "sourcePath": "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1562071815042,
+            "changeTime": 1562071815042,
+            "contentHash": "3d48858a737ab8c39315eaf1c5149980d1a9cdae",
+            "isMetadataFile": false,
+            "state": "n",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default\\profiles\\TestProfile.profile-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default\\profiles\\TestProfile.profile-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 2274,
+            "modifiedTime": 1562075827465,
+            "changeTime": 1562075827465,
+            "contentHash": "585c788b553756b691256550a6ae453bb2c3ffd2"
+        }
+    ],
+    [
+        "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default\\profiles",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Project\\FI\\SfdxDevOpsDemo\\DevopsDemo\\force-app\\main\\default\\profiles",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1562075827465,
+            "changeTime": 1562075827465,
+            "contentHash": "5ed8de72b71be3a24c259dbbab949386366358ca"
+        }
+    ]
+]
