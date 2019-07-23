@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Patient Enrollment Form</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom84: Presenter</motif>
+    <page>PEP_Patient_Create</page>
+</CustomTab>
