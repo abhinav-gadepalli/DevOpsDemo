@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ============================================================================================================
+  Section...: Introduction
+  ============================================================================================================
+  This file contains regular expressions used by various CodeCheck processes.
+  Type......: packagePatterns
+  Used by...: Standards checks against contents of package.xml file.  Ensures only items associated with the
+              current app, global items, and approved profiles are included in the project.
+  Type......: profilePatterns
+  Used by...: Standards checks against contents of profiles.  Only layouts are allowed in profiles, and the
+              patterns make sure that only layouts of the current app are being referenced.
+  Type......: referencePatterns
+  Used by...: Standards checks against reference files.  Files in the project source with names matching
+              these patterns are compared to known good copies to see if they have been changed.
+  ============================================================================================================
+  End Section...: Introduction
+  ============================================================================================================
+-->
+
+<regex>
+
+<!--
+  ============================================================================================================
+  Section...: packagePatterns
+  Notes.....: DO NOT ALLOW any GLBL objects that have child objects directly!  Must specify child object!
+  ============================================================================================================
+-->
+  <packagePatterns>
+    <pattern>^(?!Profile)(?!Role).*___PREFIX($|[ _/].*)</pattern>
+    <description>Type:Any except Profile or Role, Name starts with PREFIX.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+  <packagePatterns>
+    <pattern>^(?!Profile)(?!Role).*___.*__x.*</pattern>
+    <description>Type:Any except Profile or Role, External object.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+  
+  <packagePatterns>
+    <pattern>^(CustomObject|SharingRules|Workflow)___((?!__|\*).)*</pattern>
+    <description>Type:Selected Parent Types, Name = Standard object - reviewing standard objects elsewhere.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+
+  <packagePatterns>
+    <pattern>^(CustomObjectTranslation|Translations)___.*</pattern>
+    <description>Type:Selected objects that have additive behavior.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+
+  <packagePatterns>
+    <pattern>^(?!Profile)(?!Role).*___.*\.PREFIX($|[ _].*)</pattern>
+    <description>Type:Any except Profile and Role that is something dot PREFIX (includes child objects as well as things like ApprovalProcess).</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+
+  <packagePatterns>
+    <pattern>^ApexClass___(?i)TEST(?-i)_PREFIX_.*</pattern>
+    <description>Type:ApexClass, Name starts with TEST_PREFIX_.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+  
+  <packagePatterns>
+    <pattern>^Role___PREFIX_.*</pattern>
+    <description>Type:Role, Name starts with Role_PREFIX_.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+  <packagePatterns>
+    <pattern>^AssignmentRule___.*</pattern>
+    <description>Type:Role, Name starts with Role_PREFIX_.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+  <packagePatterns>
+    <pattern>^StandardValueSet___.*</pattern>
+    <description>Type:Role, Name starts with Role_PREFIX_.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+  <packagePatterns>
+    <pattern>^CustomApplication___standard__.*</pattern>
+    <description>Type:Role, Name starts with Role_PREFIX_.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+  <packagePatterns>
+    <pattern>^CustomLabels___(?!\*).*</pattern>
+    <description>Type:Any file referenced via CustomLabels - file contents will be reviewed.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+
+  <packagePatterns>
+    <pattern>^Layout___.*-PREFIX[ _].*</pattern>
+    <description>Type:Any object layout where name starts with PREFIX.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </packagePatterns>
+
+<!--
+  ============================================================================================================
+  End Section...: packagePatterns
+  ============================================================================================================
+-->
+
+<!--
+  ============================================================================================================
+  Section...: globalFilePatterns
+  ============================================================================================================
+-->
+  <globalFilePatterns>
+    <pattern>.*__x.*</pattern>
+    <description>External objects.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+  <globalFilePatterns>
+    <pattern>classes/.*GLBL.*</pattern>
+    <description>Files that contain GLBL.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+  <globalFilePatterns>
+    <pattern>components/.*GLBL(?!_SBLD).*</pattern>
+    <description>Files that contain GLBL but not GLBL_SBLD.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+  <globalFilePatterns>
+    <pattern>pages/.*GLBL(?!_SBLD).*</pattern>
+    <description>Files that contain GLBL but not GLBL_SBLD.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+  <globalFilePatterns>
+    <pattern>applications/.*GLBL(?!_SBLD).*</pattern>
+    <description>Files that contain GLBL but not GLBL_SBLD.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+  <globalFilePatterns>
+    <pattern>tabs/.*GLBL(?!_SBLD).*</pattern>
+    <description>Files that contain GLBL but not GLBL_SBLD.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+  <globalFilePatterns>
+    <pattern>letterhead/.*GLBL.*</pattern>
+    <description>Files that contain GLBL.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+  <globalFilePatterns>
+    <pattern>remoteSiteSettings/.*GLBL.*</pattern>
+    <description>Files that contain GLBL.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+  <globalFilePatterns>
+    <pattern>triggers/.*GLBL.*</pattern>
+    <description>Files that contain GLBL.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+  <globalFilePatterns>
+    <pattern>staticresources/.*GLBL(?!_SBLD).*</pattern>
+    <description>Files that contain GLBL but not GLBL_SBLD.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </globalFilePatterns>
+<!--
+  ============================================================================================================
+  End Section...: globalFilePatterns
+  ============================================================================================================
+-->
+
+<!--
+  ============================================================================================================
+  Section...: profilePatterns
+  ============================================================================================================
+-->
+  <profilePatterns>
+    <pattern>((?!__).)*-PREFIX[ _].*</pattern>
+    <description>Layouts based on standard objects but specific to the project.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </profilePatterns>
+  <profilePatterns>
+    <pattern>^GLBL_.*-PREFIX[ _].*</pattern>
+    <description>Layouts based on global objects but specific to the project.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </profilePatterns>
+  <profilePatterns>
+    <pattern>^PREFIX[ _].*</pattern>
+    <description>Layouts specific to the project.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </profilePatterns>
+<!--
+  ============================================================================================================
+  End Section...: profilePatterns
+  ============================================================================================================
+-->
+
+  <standardObjectPatterns>
+    <pattern>((?!__).)*\.object</pattern>
+    <description>Objects that do not have __ in the name (standard objects).</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardObjectPatterns>
+
+  <fieldNamePatterns>
+    <pattern>^(GLBL|PREFIX)_.*</pattern>
+    <description>Global or app owned field.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </fieldNamePatterns>
+  <fieldNamePatterns>
+    <pattern>((?!__).)*</pattern>
+    <description>Standard field..</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </fieldNamePatterns>
+
+  <sharingRulePatterns>
+    <pattern>((?!__).)*.sharingRules</pattern>
+    <description>Standard object sharing rule.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </sharingRulePatterns>
+
+  <destructiveChangesPatterns>
+    <pattern>.*___PREFIX($|[ _/].*)</pattern>
+    <description>Items that start with PREFIX.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </destructiveChangesPatterns>
+  <destructiveChangesPatterns>
+    <pattern>.*___((?!__).)*[-\.]PREFIX($|[ _/].*)</pattern>
+    <description>Items in standard objects that start with PREFIX.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </destructiveChangesPatterns>
+  <destructiveChangesPatterns>
+    <pattern>^ApexClass___(?i)TEST(?-i)_PREFIX_.*</pattern>
+    <description>Type:ApexClass, Name starts with TEST_PREFIX_.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </destructiveChangesPatterns>
+
+  <webLinkPatterns>
+    <pattern>^(Account|Task).New$</pattern>
+    <description>Standard object standard webLinks.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </webLinkPatterns>
+  <webLinkPatterns>
+    <pattern>^PREFIX[ _].*</pattern>
+    <description>webLinks defined in project objects.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </webLinkPatterns>
+  <webLinkPatterns>
+    <pattern>((?!__).)*\.PREFIX[ _].*</pattern>
+    <description>webLinks defined in standard objects that start with PREFIX.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </webLinkPatterns>
+
+  <standardPageLayoutSkippedFilePatterns>
+    <pattern>.*__c-.*</pattern>
+    <description>Page layouts based on custom objects.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutSkippedFilePatterns>
+  <standardPageLayoutSkippedFilePatterns>
+    <pattern>.*__kav-.*</pattern>
+    <description>Page layouts based on knowledge article versions.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutSkippedFilePatterns>
+  <standardPageLayoutSkippedFilePatterns>
+    <pattern>.*__mdt-.*</pattern>
+    <description>Page layouts based on custom metadata types.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutSkippedFilePatterns>
+
+<!--
+  ============================================================================================================
+  Section...: standardPageLayoutPatterns
+  ============================================================================================================
+-->
+  <standardPageLayoutPatterns>
+    <pattern>^Account-Account Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Asset-Asset Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Campaign-Campaign Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^CampaignMember-Campaign Member Page Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Case-Case Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^CaseClose-Close Case Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^CaseInteraction-Case Feed Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^CollaborationGroup-Group Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Contact-Contact Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Contract-Contract Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^DuplicateRecordSet-Duplicate Record Set Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Event-Event Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^FeedItem-Feed Item Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Global-Global Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Goal-Goal Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^GoalLink-Goal Link Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Idea-Idea Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^JobTracker-Job Tracker Layout - Winter %2716.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Lead-Lead Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^LiveAgentSession-Live Agent Session Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^LiveChatTranscript-Live Chat Transcript Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^LiveChatTranscriptEvent-Live Chat Transcript Event Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^LiveChatVisitor-Live Chat Visitor Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Macro-Macro Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Metric-Metric Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^MetricDataLink-Metric Data Link Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Opportunity-Opportunity Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^OpportunityLineItem-Opportunity Product Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^PersonAccount-Person Account Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Pricebook2-Price Book Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^PricebookEntry-Price Book Entry Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Product2-Product Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^QuickText-Quick Text Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^SocialPersona-Social Persona Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Solution-Solution Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^Task-Task Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^User-User Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^UserAlt-User Profile Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkAccess-Access Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkBadge-Badge Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkBadge-Badge Received Layout 192.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkBadgeDefinition-Badge Definition Layout 2%2E0.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkBadgeDefinition-Badge Definition Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkBadgeDefinition-Badge Layout 192.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkCoaching-Coaching Layout 2%2E0.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkCoaching-Coaching Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkFeedback-Feedback Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkFeedbackQuestion-Feedback Question Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkFeedbackQuestionSet-Feedback Question Set Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkFeedbackRequest-Feedback Request Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkGoal-Goal Layout 2%2E0.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkGoal-Goal Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkGoalCollaborator-Goal Collaborator Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkGoalLink-Goal Link Layout 2%2E0.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkGoalLink-Goal Link Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkPerformanceCycle-Performance Cycle Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkReward-Reward Layout 192.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkReward-Reward Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkRewardFund-Reward Fund Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+  <standardPageLayoutPatterns>
+    <pattern>^WorkRewardFundType-Reward Fund Type Layout.layout$</pattern>
+    <description>Standard object layout.</description>
+    <approvedBy>Project Technical Architect</approvedBy>
+  </standardPageLayoutPatterns>
+<!--
+  ============================================================================================================
+  End Section...: standardPageLayoutPatterns
+  ============================================================================================================
+-->
+</regex>

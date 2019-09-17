@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guidance>
+  <permissions>
+    <name>Access Custom Mobile Apps</name>
+    <apiName>CustomMobileAppsAccess</apiName>
+    <description>Allow user to run custom mobile apps.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>API Enabled</name>
+    <apiName>ApiEnabled</apiName>
+    <description>Access any Salesforce.com API.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Api Only User</name>
+    <apiName>ApiUserOnly</apiName>
+    <description>Access Salesforce.com only through a Salesforce.com API.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Assign Topics</name>
+    <apiName>AssignTopics</apiName>
+    <description>Assign existing topics to feed items. Remove topics from feed items.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Author Apex</name>
+    <apiName>AuthorApex</apiName>
+    <description>Create Apex classes and triggers.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Bulk API Hard Delete</name>
+    <apiName>BulkApiHardDelete</apiName>
+    <description>Delete records in the Bulk API without storing them in the Recycle Bin.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Chatter Internal User</name>
+    <apiName>ChatterInternalUser</apiName>
+    <description>Use all Chatter features.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Configure Custom Recommendations</name>
+    <apiName>ConfigCustomRecs</apiName>
+    <description>Add custom recommendations in the feed, motivating users to get engaged and take action.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Connect Organization to Environment Hub</name>
+    <apiName>ConnectOrgToEnvironmentHub</apiName>
+    <description>Allows a user to connect this organization to an Environment Hub.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create and Customize Dashboards</name>
+    <apiName>CreateCustomizeDashboards</apiName>
+    <description>Create, edit, and delete dashboards in personal folders.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create and Customize List Views</name>
+    <apiName>CreateCustomizeFilters</apiName>
+    <description>Create list views; modify and delete own list views.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create and Customize Reports</name>
+    <apiName>CreateCustomizeReports</apiName>
+    <description>Create, edit, and delete reports in personal folders.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create and Own New Chatter Groups</name>
+    <apiName>ChatterOwnGroups</apiName>
+    <description>Create and own new Chatter groups.</description>
+    <rating>A</rating>
+    <guidanceNotes>Creating new chatter groups requires giving users the ??? permission set. </guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create and Set Up Communities</name>
+    <apiName>ManageNetworks</apiName>
+    <description>Create communities, manage community-wide settings, membership, login and registration, branding, and associated Site.com site.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create and Share Content Deliveries for Salesforce Files</name>
+    <apiName>ChatterFileLink</apiName>
+    <description>Share a Chatter file with anyone by creating a file link and sending it via email or IM.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create and Upload Change Sets</name>
+    <apiName>OutboundMigrationToolsUser</apiName>
+    <description>Create, edit, and upload outbound change sets.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any project user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create AppExchange Packages</name>
+    <apiName>CreatePackaging</apiName>
+    <description>Create packages that can be distributed through AppExchange.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any project user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create custom Badge Definitions</name>
+    <apiName>CreateWorkBadgeDefinition</apiName>
+    <description>Create custom badge definitions.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any project user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create Dashboard Folders</name>
+    <apiName>CreateDashboardFolders</apiName>
+    <description>Create dashboard folders and manage these folders if sharing rights allow.</description>
+    <rating>A</rating>
+    <guidanceNotes>If in apps report strategy</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create Report Folders</name>
+    <apiName>CreateReportFolders</apiName>
+    <description>Create report folders and manage these folders if sharing rights allow.</description>
+    <rating>A</rating>
+    <guidanceNotes>If in apps report strategy</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create Topics</name>
+    <apiName>CreateTopics</apiName>
+    <description>Create new topics by assigning them to feed items.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Customize Application</name>
+    <apiName>CustomizeApplication</apiName>
+    <description>Customize the organization using App Setup menu options.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any project user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Delete Topics</name>
+    <apiName>DeleteTopics</apiName>
+    <description>Delete topics and remove all corresponding topic assignments from feed items.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any project user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Deploy Change Sets</name>
+    <apiName>InboundMigrationToolsUser</apiName>
+    <description>Deploy inbound change sets.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any project user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Download AppExchange Packages</name>
+    <apiName>InstallPackaging</apiName>
+    <description>Install or uninstall AppExchange packages as system administrators.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any project user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Drag-and-Drop Dashboard Builder</name>
+    <apiName>CanUseNewDashboardBuilder</apiName>
+    <description>Create, edit, and delete dashboards through the drag-and-drop dashboard builder interface.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should be considered carefully as part of an applications reporting strategy</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Edit Events</name>
+    <apiName>EditEvent</apiName>
+    <description>Create, edit, and delete events.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Edit HTML Templates</name>
+    <apiName>EditHtmlTemplates</apiName>
+    <description>Create, edit, and delete HTML email templates.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Edit My Dashboards</name>
+    <apiName>EditMyDashboards</apiName>
+    <description>Edit, move, save, and delete user's own dashboards in shared folders.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should be considered carefully as part of an applications reporting strategy</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Edit My Own Posts</name>
+    <apiName>ChatterEditOwnPost</apiName>
+    <description>Allow users to edit their own feed items.</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Edit My Reports</name>
+    <apiName>EditMyReports</apiName>
+    <description>Edit, move, save, and delete user's own reports in shared folders.</description>
+    <rating>A</rating>
+    <guidanceNotes>If in apps report strategy</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Edit Posts on Records I Own</name>
+    <apiName>ChatterEditOwnRecordPost</apiName>
+    <description>Allow users to edit feed items they manage.</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Edit Read Only Fields</name>
+    <apiName>EditReadonlyFields</apiName>
+    <description>Edit fields that are read only due to page layouts or field-level security.</description>
+    <rating>A</rating>
+    <guidanceNotes>Overides a level of security, and will be applicable to all other applications a user has access to.</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Edit Tasks</name>
+    <apiName>EditTask</apiName>
+    <description>Create, edit, and delete tasks.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Edit Topics</name>
+    <apiName>EditTopics</apiName>
+    <description>Edit topic names and descriptions.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Enable Work.com</name>
+    <apiName>WorkDotComUserPerm</apiName>
+    <description>Allow Work.com only users to access Work.com functionality.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Enable Work.com Calibration</name>
+    <apiName>WorkCalibrationUser</apiName>
+    <description>Allow Work.com users to access Work.com Calibration functionality.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Export Reports</name>
+    <apiName>ExportReport</apiName>
+    <description>Use Export Details and Printable View to export reports.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Import Custom Objects</name>
+    <apiName>ImportCustomObjects</apiName>
+    <description>Allows non-admin users to import Custom Objects using Data Import Wizard.</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Insert System Field Values for Chatter Feeds</name>
+    <apiName>CanInsertFeedSystemFields</apiName>
+    <description>Set the author or creation date for a Chatter post or comment.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Invite Customers To Chatter</name>
+    <apiName>ChatterInviteExternalUsers</apiName>
+    <description>Invite Customers To Chatter</description>
+    <rating>A</rating>
+    <guidanceNotes>Not in line with Lilly Policy</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Lightning Experience User</name>
+    <apiName>LightningExperienceUser</apiName>
+    <description>Access the Salesforce Lightning Experience. Users with this permission can individually enable or disable this user interface.</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage All Private Reports and Dashboards</name>
+    <apiName>ManagePvtRptsAndDashbds</apiName>
+    <description>Allows full access to reports and dashboards in all other users' private folders (API only).</description>
+    <rating>A</rating>
+    <guidanceNotes>Snapshots are limited. Engage Cirrus if your application is likely to use them</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Auth. Providers</name>
+    <apiName>ManageAuthProviders</apiName>
+    <description></description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Billing</name>
+    <apiName>EditBillingInfo</apiName>
+    <description>Purchade additional licenses and features</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Chatter Messages</name>
+    <apiName>PermissionsManageChatterMessages</apiName>
+    <description>Access all users' messages sent in Chatter.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Communities</name>
+    <apiName>GovernNetworks</apiName>
+    <description>Access Community Management to view community dashboards and set up Reputation point system and levels.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Connected Apps</name>
+    <apiName>ManageRemoteAccess</apiName>
+    <description>Manage, create, edit, and delete connected applications.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Custom Permissions</name>
+    <apiName>ManageCustomPermissions</apiName>
+    <description>Create, edit, and delete custom permissions</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Custom Report Types</name>
+    <apiName>ManageCustomReportTypes</apiName>
+    <description>Create, edit, and delete custom report types.</description>
+    <rating>A</rating>
+    <guidanceNotes>Report Types can be managed through service requests</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Dashboards in Public Folders</name>
+    <apiName>ManageDashbdsInPubFolders</apiName>
+    <description>Create, edit, delete dashboards, and manage their sharing in all public folders.</description>
+    <rating>A</rating>
+    <guidanceNotes>The GSO has granular folder sharing, and as such this permission should not be required for end users. Instead make users "Editors" or "Managers" of application specifc folders. This means that users will only see folders that are relevent to them.</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Data Categories</name>
+    <apiName>ManageDataCategories</apiName>
+    <description>Create, edit, and delete data categories.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Data Integrations</name>
+    <apiName>ManageDataIntegrations</apiName>
+    <description>Monitor or abort Bulk API jobs.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Dynamic Dashboards</name>
+    <apiName>ManageDynamicDashboards</apiName>
+    <description>Create, edit, and delete dynamic dashboards.</description>
+    <rating>A</rating>
+    <guidanceNotes>Dynamic Dashboard are extermely limited in the GSO. If your application wants to utilise dynamic dashboards then please contact the Cirrus team to discuss this in advance.</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Email Client Configurations</name>
+    <apiName>ManageEmailClientConfig</apiName>
+    <description>Create, edit, and delete Outlook configurations for Salesforce for Outlook.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Force.com Flow</name>
+    <apiName>ManageInteraction</apiName>
+    <description>Create and edit Force.com Flows.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Letterheads</name>
+    <apiName>EditBrandTemplates</apiName>
+    <description>Create, edit, and delete letterheads for HTML emails.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Mobile Configurations</name>
+    <apiName>ManageMobile</apiName>
+    <description>Access Salesforce Classic features.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Package Licenses</name>
+    <apiName>ManagePackageLicenses</apiName>
+    <description>Manage package licenses in subscriber organizations.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Promoted Search Terms</name>
+    <apiName>ManageSearchPromotionRules</apiName>
+    <description>Create, edit, and delete promoted search terms</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Public Documents</name>
+    <apiName>EditPublicDocuments</apiName>
+    <description>Create, edit, and delete folders for public documents.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Public List Views</name>
+    <apiName>EditPublicFilters</apiName>
+    <description>Create, edit, and delete public list views.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Public Templates</name>
+    <apiName>EditPublicTemplates</apiName>
+    <description>Create, edit, and delete text emails, mail merge templates, and folders for public email templates.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Reporting Snapshots</name>
+    <apiName>ManageAnalyticSnapshots</apiName>
+    <description>Create, edit, and delete reporting snapshots</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Reports in Public Folders</name>
+    <apiName>ManageReportsInPubFolders</apiName>
+    <description>Create, edit, delete reports, and manage their sharing in all public folders.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Sharing Calculation Deferral</name>
+    <apiName>DeferSharingCalculations</apiName>
+    <description>Suspend and resume sharing calculation.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Synonyms</name>
+    <apiName>ManageSynonyms</apiName>
+    <description>Create, edit, and delete synonym groups.</description>
+    <rating></rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Translation</name>
+    <apiName>ManageTranslation</apiName>
+    <description>Manage translated labels in the Translation Workbench.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Two-Factor Authentication</name>
+    <apiName>ManageTwoFactor</apiName>
+    <description>Manage the time-based token secret for two-factor authentication</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Manage Unlisted Groups</name>
+    <apiName>ManageUnlistedGroups</apiName>
+    <description>View and moderate unlisted Chatter groups</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Mass Edits from Lists</name>
+    <apiName>MassInlineEdit</apiName>
+    <description>Edit multiple records simultaneously from a list with inline editing.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Mass Email</name>
+    <apiName>EmailMass</apiName>
+    <description>Send mass emails to contacts and leads.</description>
+    <rating>A</rating>
+    <guidanceNotes>If this is required please contact Cirrus in advance</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Merge Topics</name>
+    <apiName>MergeTopics</apiName>
+    <description>Merge one or more topics</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Moderate Chatter</name>
+    <apiName>ModerateChatter</apiName>
+    <description>Deactivate Chatter Free users, assign moderator privileges to Chatter Free users, and remove posts.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Moderate Communities Feeds</name>
+    <apiName>ModerateNetworkFeeds</apiName>
+    <description>Moderate Chatter Feeds in communities</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Moderate Communities Files</name>
+    <apiName>ModerateNetworkFiles</apiName>
+    <description>Moderate Chatter Files in communities</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Modify All Data</name>
+    <apiName>ModifyAllData</apiName>
+    <description>Create, edit, and delete all organization data, regardless of sharing settings.</description>
+    <rating>A</rating>
+    <guidanceNotes>Applicable across all applications on the platform. Should never be given out as part of an application permission set</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Password Never Expires</name>
+    <apiName>PasswordNeverExpires</apiName>
+    <description>Prevent the user's password from expiring.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be used for any application permission set. Talk to Cirrus if you have an integration user.</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Report Builder</name>
+    <apiName>NewReportBuilder</apiName>
+    <description>Create, edit, and delete reports through the drag and drop report builder interface.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Run Flows</name>
+    <apiName>RunFlow</apiName>
+    <description>Run flows.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Run Reports</name>
+    <apiName>RunReports</apiName>
+    <description>Run reports and dashboards.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Schedule Dashboards</name>
+    <apiName>ScheduleJob</apiName>
+    <description>Schedule when dashboards refresh, and send email notifications that include refreshed dashboards in HTML format.</description>
+    <rating>A</rating>
+    <guidanceNotes>Not available</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Schedule Reports</name>
+    <apiName>ScheduleReports</apiName>
+    <description>Run reports in the background, and export results as a CSV or Excel file on completion.</description>
+    <rating>A</rating>
+    <guidanceNotes>Not available</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Select Files from Salesforce</name>
+    <apiName>SelectFilesFromSalesforce</apiName>
+    <description>Selecting a Salesforce file is an option when attaching a file.</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Send Email</name>
+    <apiName>EmailSingle</apiName>
+    <description></description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Send Outbound Messages</name>
+    <apiName>EnableNotifications</apiName>
+    <description>Send outbound messages to an external Web service API.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Show Custom Sidebar On All Pages</name>
+    <apiName>CustomSidebarOnAllPages</apiName>
+    <description>Display a custom sidebar on all pages in Salesforce.com</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Sync Files</name>
+    <apiName>HasFileSync</apiName>
+    <description>Allows users to sync selected files between Chatter and their devices.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Transfer Record</name>
+    <apiName>TransferAnyEntity</apiName>
+    <description>Change the owner of most records.</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Two-Factor Authentication for API Logins</name>
+    <apiName>TwoFactorApi</apiName>
+    <description>Require users to enter a time-based token instead of the emailed security token in the API.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Two-Factor Authentication for User Interface Logins</name>
+    <apiName>ForceTwoFactor</apiName>
+    <description>Require users to enter a time-based token during login.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Upload AppExchange Packages</name>
+    <apiName>PublishPackaging</apiName>
+    <description>Upload packages to AppExchange for distribution.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Use Identity Connect</name>
+    <apiName>IdentityConnect</apiName>
+    <description>Gives the user access to the Identity Connect product which provides Active Directory integration.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Use Identity Features</name>
+    <apiName>IdentityEnabled</apiName>
+    <description>Gives the user access to Identity features such as App Launcher.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View All Data</name>
+    <apiName>ViewAllData</apiName>
+    <description>View all organizational data, regardless of sharing settings.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should never be given out - will grant access to all data on the platform with the exception of encrypted data</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View Dashboards in Public Folders</name>
+    <apiName>ViewPublicDashboards</apiName>
+    <description>View and access dashboards in public folders, which does not include others personal folders.</description>
+    <rating>A</rating>
+    <guidanceNotes>This will grant visibility of more dashboard than the user needs. For usability and security do not assign this to ordinary users</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View Data Categories</name>
+    <apiName>ViewDataCategories</apiName>
+    <description>View the Data Categories page.</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View Encrypted Data</name>
+    <apiName>ViewEncryptedData</apiName>
+    <description>View the value of encrypted fields in plain text.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View Event Log Files</name>
+    <apiName>ViewEventLogFiles</apiName>
+    <description>Get CSV event log files via the API</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View Global Header</name>
+    <apiName>ViewGlobalHeader</apiName>
+    <description>View the global header to switch between apps and communities and access personal setup and customization options</description>
+    <rating></rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View Help Link</name>
+    <apiName>ViewHelpLink</apiName>
+    <description>Allow user to view help link.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View My Team's Dashboards</name>
+    <apiName>ViewMyTeamsDashboards</apiName>
+    <description>View dashboards owned by people under them in the role hierarchy.</description>
+    <rating>A</rating>
+    <guidanceNotes>The GSO does not have a role hierachy, making this permission defunct for applications in the GSO.</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View Reports in Public Folders</name>
+    <apiName>ViewPublicReports</apiName>
+    <description>View and access reports in public folders, which does not include others personal folders.</description>
+    <rating>A</rating>
+    <guidanceNotes>This will grant visibility of more dashboard than the user needs. For usability and security do not assign this to ordinary users</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View Setup and Configuration</name>
+    <apiName>ViewSetup</apiName>
+    <description>View the App Setup and Administrative Settings pages.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Weekly Data Export</name>
+    <apiName>DataExport</apiName>
+    <description>Run the weekly data export service.</description>
+    <rating>A</rating>
+    <guidanceNotes>Should not be relevent for any appliction user</guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Allow sending of List Emails</name>
+    <apiName>ListEmailSend</apiName>
+    <description>Allow users to create, edit and send List Emails.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Allow WebLink access via the Tooling API</name>
+    <apiName>UseWebLink</apiName>
+    <description>Allow users to access WebLinks via the Tooling API</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create and Update Second-Generation Packages</name>
+    <apiName>Packaging2</apiName>
+    <description>Create and update these packages using the command-line interface.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create Content Deliveries</name>
+    <apiName>DistributeFromPersWksp</apiName>
+    <description>Create content delivery links to share files that aren't managed by a library. To let a user create content deliveries for files in a library, enable Deliver Content for that user in the library.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Create Public Links</name>
+    <apiName>ChatterFileLink</apiName>
+    <description>Let users create links to share files externally. Unlike content deliveries, public links can't be password protected. To let a user create links to files in a library, enable Deliver Content for that user in the library.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Pin Posts in Feeds</name>
+    <apiName>FeedPinning</apiName>
+    <description>Assign permission to pin a post in this org and your communities.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>Verify Answers to Chatter Questions</name>
+    <apiName>CanVerifyComment</apiName>
+    <description>Mark answers to Chatter questions as verified.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+  <permissions>
+    <name>View Community 360</name>
+    <apiName>ViewCustomerSentiment</apiName>
+    <description>Access and gauge a customer's use of a community. Make sure this type of data gathering complies with your company privacy policies.</description>
+    <rating>A</rating>
+    <guidanceNotes></guidanceNotes>
+  </permissions>
+</guidance>
