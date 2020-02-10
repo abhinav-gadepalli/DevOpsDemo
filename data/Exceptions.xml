@@ -3,8 +3,8 @@
 <cxResults>
     <app>PEP_Demo</app>
     <cxQueryName>The DML statement "insert", can not be inside a for loop.</cxQueryName>
-    <file>CodeCheck/src/classes/PEP_Trigger_Handler_Patient.cls</file>
-    <line>18</line>
+    <file>CCCodeCheck/src/classes/PEP_Trigger_Handler_Patient.cls</file>
+    <line>20</line>
     <column>123</column>
     <approvedBy>Abhinav Gadepalli</approvedBy>
     <justification>Approved for demo</justification>
