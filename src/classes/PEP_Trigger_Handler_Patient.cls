@@ -17,7 +17,7 @@ public with sharing class PEP_Trigger_Handler_Patient{
         Id userId = UserInfo.getUserId();
         for(PEP_Patient__c pat : patientList){
             Task t = new Task(WhatId = pat.Id, Subject = 'Follow-up with patient for services opt-in', OwnerId = userId, Status = 'Not Started', ActivityDate = System.today() + 5);
-            //insert t;
+            insert t;
 
             tasksToInsert.add(t);
         }
