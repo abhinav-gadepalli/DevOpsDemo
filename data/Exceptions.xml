@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 <cxResults>
-    <app>PEP_Demo</app>
+    <app>PEP_Demo1</app>
     <cxQueryName>Avoid DML in Loops</cxQueryName>
     <file>CCCodeCheck/src/classes/PEP_Trigger_Handler_Patient.cls</file>
     <line>20</line>
