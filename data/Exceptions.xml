@@ -12,11 +12,11 @@
 </cxResults>
 
 <generics>
-    <app>PEP_Demo1</app>
+    <app>PEP_Demo</app>
     <type>CustomTab</type>
     <item>GLOBAL_Patient</item>
     <approvedBy>Abhinav Gadepalli</approvedBy>
-    <justification>Project Specific</justification>
+    <justification>This is a custom tab for global object</justification>
     <expiresYyyyMmDd>20251231</expiresYyyyMmDd>
   </generics>
 </Package>
