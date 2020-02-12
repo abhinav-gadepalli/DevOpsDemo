@@ -15,6 +15,7 @@
     <types>
         <members>PEP_Patient_Enrollment_Form</members>
         <members>PEP_Patient__c</members>
+		 <members>GLOBAL_Patient</members>
         <name>CustomTab</name>
     </types>
     <types>

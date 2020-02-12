@@ -10,4 +10,13 @@
     <justification>Approved for demo</justification>
     <expiresYyyyMmDd>20200606</expiresYyyyMmDd>
 </cxResults>
+
+<generics>
+    <app>PEP_Demo1</app>
+    <type>CustomTab</type>
+    <item>GLOBAL_Patient</item>
+    <approvedBy>Abhinav Gadepalli</approvedBy>
+    <justification>Project Specific</justification>
+    <expiresYyyyMmDd>20251231</expiresYyyyMmDd>
+  </generics>
 </Package>
