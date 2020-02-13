@@ -1,0 +1,111 @@
+
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+	flatDir {
+		dirs 'libs'
+	}
+}
+
+
+dependencies {
+    //browser driver dependencies
+    compile 'org.seleniumhq.selenium:selenium-firefox-driver:2.47.1'
+	compile 'org.seleniumhq.selenium:selenium-chrome-driver:2.47.1'
+	compile 'org.seleniumhq.selenium:selenium-ie-driver:2.47.1'
+	compile 'org.seleniumhq.selenium:selenium-safari-driver:2.47.1'
+	compile 'org.seleniumhq.selenium:selenium-remote-driver:2.47.1'
+	// selenium server dependencies
+	compile 'org.seleniumhq.selenium:selenium-server:2.47.1'
+	// apache poi
+	compile('org.apache.poi:poi:3.12')
+	compile('org.apache.poi:poi-ooxml:3.12')
+	compile('org.apache.poi:poi-scratchpad:3.12')
+	compile('org.apache.poi:poi-ooxml-schemas:3.12')
+	// libaries
+	compile('com.google.guava:guava:18.0')
+	compile('com.google.inject:guice:4.0')
+	compile('com.google.code.gson:gson:2.3.1')
+	compile('org.apache.httpcomponents:httpmime:4.5')
+	compile('org.apache.httpcomponents:httpcore:4.4.3')
+	compile('org.apache.httpcomponents:httpmime:4.5')
+	compile('xerces:xercesImpl:2.11.0')	
+	compile('xml-apis:xml-apis:1.0.b2')
+	
+	// logging
+	compile ('log4j:log4j:1.2.17')
+	
+	// mail	
+	compile('javax.mail:mail:1.4.6')
+	compile('javax.mail:javax.mail-api:1.4.6')
+	compile('com.sun.mail:javax.mail:1.5.1')
+	
+	//json
+	compile('org.codehaus.groovy:groovy-all:2.3.1')
+	compile('org.codehaus.groovy:groovy-json:2.3.1')
+	compile('com.jayway.restassured:json-path:2.3.1')
+	compile('com.googlecode.json-simple:json-simple:1.1.1')
+	compile('io.jsonwebtoken:jjwt:0.5.1')
+	
+	
+    // testng
+    testCompile ('org.testng:testng:6.8.8')
+    testCompile ('org.uncommons:reportng:1.1.4')
+    testCompile ('com.relevantcodes:extentreports:2.05')
+    
+    
+   
+  
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.6'
+}
+
+test {
+	useTestNG(){
+		useDefaultListeners = true
+		suites 'src/test/resources/testng.xml'  
+		options {
+			listeners << 'org.uncommons.reportng.HTMLReporter'
+		}
+	}
+}
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+task configureProperties() {
+	doLast{
+		def browserKey = "browserType"
+		
+		if(project.hasProperty(browserKey)) { 
+			ant.propertyfile(
+				file: "src/test/resources/config.properties") {
+				entry( key: browserKey, value: project.property(browserKey))
+			}
+		}
+	}
+}
+
+
+
+
+task doTest(type: Test, dependsOn: configureProperties) {
+	useTestNG {
+		useDefaultListeners = true
+		suites 'src/test/resources/testng.xml'
+		options {
+			listeners << 'org.uncommons.reportng.HTMLReporter'
+		}
+	}
+}
+
+
+
+
+

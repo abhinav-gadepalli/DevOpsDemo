@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.axa.Sample.UniversalShoppingcartPage">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testUniversalshoppingcartPage"/>
+        </methods>
+      </class> <!-- com.axa.Sample.UniversalShoppingcartPage -->
+      <class name="com.axa.Sample.UniversalProfilePage">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testUniversalprofilePage"/>
+        </methods>
+      </class> <!-- com.axa.Sample.UniversalProfilePage -->
+      <class name="com.axa.base.TestBase">
+        <methods>
+          <include name="broswerClose"/>
+          <include name="afterSuite"/>
+          <include name="initializeSuite"/>
+        </methods>
+      </class> <!-- com.axa.base.TestBase -->
+      <class name="com.axa.testscripts.AXA_PartnerSelection_Test">
+        <methods>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.axa.testscripts.AXA_PartnerSelection_Test -->
+      <class name="com.axa.Sample.NewLoginTest">
+        <methods>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.axa.Sample.NewLoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
