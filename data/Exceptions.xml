@@ -11,7 +11,7 @@
     <expiresYyyyMmDd>20200606</expiresYyyyMmDd>
 </cxResults>
 <generics>
-    <app>PEP_Demo1</app>
+    <app>PEP_Demo</app>
     <type>CustomTab</type>
     <item>GLOBAL_Patient</item>
     <approvedBy>Abhinav Gadepalli</approvedBy>
