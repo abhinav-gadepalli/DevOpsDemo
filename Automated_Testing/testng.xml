@@ -1,8 +1,0 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
-<suite name = "Regression">
-	<test name = "Automation">
-		<classes>
-			<class name = "com.PEP_Test.PEP_Selenium"/>
-		</classes>
-	</test>
-</suite>
