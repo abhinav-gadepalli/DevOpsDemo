@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   ============================================================================================================
-  Section...: Introductions
+  Section...: Introduction
   ============================================================================================================
   This file contains regular expressions used by various CodeCheck processes.
   Type......: packagePatterns
