@@ -4,7 +4,7 @@
   Section...: Introduction
   ============================================================================================================
   This file contains regular expressions used by various CodeCheck processes.
-  Type......: packagePatterns
+  Type......: packagePatternss
   Used by...: Standards checks against contents of package.xml file.  Ensures only items associated with the
               current app, global items, and approved profiles are included in the project.
   Type......: profilePatterns
