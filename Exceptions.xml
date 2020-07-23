@@ -4,7 +4,6 @@
     <app>MPOT</app>
     <org>GSO1</org>
     <type>CustomObject</type>
-    <!--<item>permitted</item>-->
 		<item>1Logs__c</item>
     <approvedBy>Ishaan Motwani</approvedBy>
     <justification>App-specific removals are validated by code</justification>
